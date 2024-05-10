@@ -1,0 +1,151 @@
+.hero-main{
+    width: clamp(300px,100%,1000px);
+    margin:4rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.hero-con{
+    width: clamp(280px,30%,900px);
+    
+   
+}
+.hero-con1{
+    width: clamp(280px,70%,900px);
+    position: relative;
+}
+
+.cta-con{
+    width: fit-content;
+    margin: 0 2rem;
+}
+.hero-img{
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+}
+.hero-img > img{
+    width: clamp(150px, 60%,500px);
+   position: relative;
+   left: 6rem;
+
+   
+
+}
+.hero-item{
+    
+    border-radius: 2rem;
+    background-color: #ffff;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 20px;
+   font-size: 13px;
+   box-shadow: 2px 2px 20px rgba(170, 169, 169, 0.432);
+   transition: all 0.3s ease;
+
+}
+.hero-item1 {
+    top: 70%;
+    left: 22%;
+   width:clamp(100px,25%,500px);
+   
+   box-shadow: 2px 2px 20px rgba(170, 169, 169, 0.432);
+   position: absolute;
+   font-size: 10px;
+   display: flex;
+   align-items: center;
+   gap:5px;
+   background-color: #ffff;
+   border-radius: 2rem;
+   transition: all 0.3s ease;
+}
+.hero-item:nth-child(2) {
+    top: 15%;
+    left: 10%;
+    width:clamp(150px,25%,500px);
+    
+}
+.hero-item:nth-child(3) {
+    bottom: -13%;
+    right:22%;
+    width: clamp(150px,25%,500px);
+  
+}
+.hero-item:hover{
+    background-color: #002e18;
+    color:#ffff;
+    cursor: pointer;
+    transform:scale(1.07);
+}
+.hero-item1:hover{
+    background-color: #002e18;
+    color:#ffff;
+    cursor: pointer;
+    transform:scale(1.07);
+}
+ .rocket{
+    width: 50px;
+ }
+
+ @media  screen and (max-width: 830px) {
+    .hero-item{
+        font-size: 10px;
+    }
+    .hero-item > h1 {
+        font-size: 12px;
+    }
+    .hero-item1 > span > h1{
+        font-size: 12px;
+    }
+    .hero-item:nth-child(2){
+        left: 18%;
+       
+    }
+    .hero-item1 {
+         font-size: 10px;
+         top: 60%;
+    }
+   
+    .rocket{
+        width: 30px;
+    }
+ }
+ .hero-carousel-buttons{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  
+    width: 100px;
+    margin: 20px auto;
+ }
+ .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #e4e3e3;
+    transition: all 0.5s ease;
+
+ }
+ .dot:hover{
+    cursor: pointer;
+    background-color: #cad0cb;
+ }
+ .dot.active {
+    background-color: #2da950;
+ }
+ 
+ .hero-carousel{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 90%;
+    margin: 5rem auto;
+    display: none;
+    transition: all 0.5s ease;
+    
+}
+.hero-carousel.active{
+    display: block;
+}
